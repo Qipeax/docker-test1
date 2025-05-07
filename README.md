@@ -7,6 +7,6 @@
    git clone git clone https://github.com/Qipeax/semestr1.git
    cd my-shop
 
-2. ** Запуск серверов**
+2. **Запуск серверов**
    ```bash
    docker-compose up --build
