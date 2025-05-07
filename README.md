@@ -4,8 +4,8 @@
 
 1. **Клонировать репозиторий**  
    ```bash
-   git clone git clone https://github.com/Qipeax/semestr1.git
-   cd my-shop
+   git clone git clone https://github.com/Qipeax/название репозитория.git
+
 
 2. **Запуск серверов**
    ```bash
