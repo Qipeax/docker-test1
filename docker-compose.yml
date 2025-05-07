@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  load-balancer:
+    build:
+      context: .
+      dockerfile: load-balancer/Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend1
+      - backend2
+      - backend3
+
+  backend1:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      - PORT=3000
+      - INSTANCE_ID=1
+    expose:
+      - "3000"
+
+  backend2:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      - PORT=3000
+      - INSTANCE_ID=2
+    expose:
+      - "3000"
+
+  backend3:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      - PORT=3000
+      - INSTANCE_ID=3
+    expose:
+      - "3000"

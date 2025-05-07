@@ -1,0 +1,14 @@
+{
+  "name": "node-js-load-balancer",
+  "version": "1.0.0",
+  "scripts": {
+    "start-balancer": "node load-balancer/loadBalancer.js",
+    "start-backend": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "http-proxy": "^1.18.1",
+    "nginx": "^1.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
